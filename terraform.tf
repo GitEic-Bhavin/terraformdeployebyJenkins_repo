@@ -1,7 +1,7 @@
 # create S3 Bucket
 
 provider "aws" {
-  regionn = "ap-south-1"
+  region = "ap-south-1"
 }
 
 resource "aws_s3_bucket" "my_bucket" {
