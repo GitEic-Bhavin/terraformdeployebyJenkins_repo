@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+   tools {
+        terraform 'terraform'
+        }
+
     parameters {
         booleanParam(name: 'autoApprove', defaultValue: false, description: 'Automatically run apply after terraform plan executed ?')
     }
